@@ -1,0 +1,389 @@
+<html> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5023e0b475.js" crossorigin="anonymous"></script>
+
+<script src="UM.js"></script>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDeButT5LplM28KEMz3ftrG_RY6XglrsgE",
+    authDomain: "un-meet.firebaseapp.com",
+    projectId: "un-meet",
+    storageBucket: "un-meet.appspot.com",
+    messagingSenderId: "561225023603",
+    appId: "1:561225023603:web:8f5a3e46bcee43d6332a06",
+    measurementId: "G-SXEGWR79FL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<link rel="stylesheet" href="http://localhost:8158/Singup.css">
+  <div class="Page" id="Singuppage">
+  <div class="singupheader">
+    <b>
+      Singup
+    </b>
+  </div>
+  <center>
+    <br>
+    <br>
+    
+<input class="Name1" placeholder="Enter You Username" oninput="checkifusernameisalreadytaken(event)">
+<br>
+<br>
+<center>
+  <form id="dateofbirth">
+  <p id="Titleofdateofbirth">Enter Your Date of Birth:</p>
+  <br>
+  
+  <select id="Dateofbirthday">
+    
+  </select>
+    <select id="Dateofbirthmonth">
+    
+  </select>
+      <select id="Dateofbirthyear" onchange="findage2();">
+    <option value="Select year">Select year</option>
+  </select>
+  <p id="age"></p>
+  </form>
+  <input id="Email" placeholder="Enter you Email" type="email">
+ <input id="Verify" type="number"placeholder="Verify">
+ <input id="newpassword" placeholder="Enter Your Password">
+</center>
+
+
+</form>
+<br>
+<br>
+<br>
+<button onclick="singup(event);" class="button" id="singupbutton" style="display:block;">Next</button>
+<button class="button" onclick="adddata();" id="button2" style="display:none;">Confirm</button>
+<p><a onclick="displaylogipage(event);" style="text-decoration:none; font-family:Sans-Serif; color:black;" href="javascript:void(0)">&#x2190; Already have an account</a></p>
+  </center>
+  <script src="Singup.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script></script></script>
+
+  </div>
+ <div class="Page" id="Loginpage">
+   <div class="loginheader">
+     
+   <!--<img style="width:45px; height:55px;" src='https://i.postimg.cc/LqW0CVvy/Un-Meet-free-file.png' border='0' alt='Un-Meet-free-file'/>-->
+   <b>
+     Login
+   </b>
+   </div>
+   <center>
+     <br>
+     <br>
+     <div class="loginbox">
+       <br>
+       <br>
+       <br>
+       <br>
+       
+       <input class="loginusernameinput" placeholder="Username" style=" padding:15px; border:none; outline:none; border-bottom:1px solid black; font-style: bold;">
+       
+       <br>
+       <br>
+       <br>
+       <br>
+       <input placeholder="password" class="loginpasswordinput" type="password"style="padding:15px; border:none; outline:none; border-bottom:1px solid black;">
+       <label onclick="sp();" style="position:fixed; left:270; top:285;">				<i id="i" class="bi bi-eye-slash"></i></label>
+       <br>
+       <br>
+       <br>
+       <br>
+       <input type="email"  class="loginemailinput" placeholder="email" style="padding:15px; border:none; outline:none; border-bottom:1px solid black;">
+       <br>
+       <br>
+       <br>
+       <br>
+       <button class="button" id="loginbutton" onclick="login();">Next</button>
+     </div>
+   </center>
+ </div>
+ <script>
+   function login() {
+     // body...
+    
+    
+    var loginusernameinput = document.querySelector(".loginusernameinput").value;
+    var loginpasswordinput = document.querySelector(".loginpasswordinput").value;
+    var loginemailinput = document.querySelector(".loginemailinput").value;
+  for(var i = 0; i < username.length; i++){
+    if(loginusernameinput == username[i] && loginpasswordinput == password[i] && loginemailinput == email[i]){
+     // alert(snapkey[i])
+      document.cookie = "s_k=" + snapkey[i] + "; expires=Fri, 19 Feb 2275 12:00:00 UTC;";
+      console.log(c.s_k)
+      setTimeout(function() {
+        location.reload()
+      }, 100);
+    }
+  }
+   }
+ </script>
+ <center>
+   
+ <button onclick="displaysinguppage(event);" class="newacountbutton">Create New Account</button>
+ </center>
+ <div id="Un-Meet" class="Page">
+<div id="header">
+<font style="font-family: 'Fredoka One', cursive; text-align:center;" size="5" color="#009bff">Un-Meet</font>
+</div>
+<div id="posts">
+          <video src="V.mp4" width="100%" height="345" controls></video>
+          <br>
+          <br>
+                  <video src="V.mp4" width="100%" height="345" controls></video>
+                  
+</div>
+  <div id="footer">
+    <font size="6">
+    <div id="indicator" onclick="updatestatus(event);" data-block="notification" data-none="Un-Meet">
+      0
+    </div>
+<i style="cursor:pointer"class="bi bi-plus-circle"></i>
+  <i class="bi bi-search" style="position:fixed; left:22%; cursor:pointer;"></i>
+<i class="bi bi-person-circle" style="position:fixed; left:90%; cursor:pointer;" onclick="openprofile();"></i>
+<i class="bi bi-bell" style="position:fixed; left:0; cursor:pointer;" onclick="updatestatus(event);" data-for="uns" data-block="notification" data-none="Un-Meet"></i>
+<i class="bi bi-chat-dots" style="position:fixed; left:68%; cursor:pointer;" onclick="displayblockornone(event);" data-block="Messages" data-none="Un-Meet"></i>
+    </font>
+  </div>
+</div>
+<div id="MyProfile" class="Page">
+  
+  <div class="mynameheader">
+    <div class="overflowbox">
+      
+    <p id="myname" style="font-size:30; font-family:Comfortaa,cursive;">Sourabh_Harsha</p>
+    <font size="6">
+    <i class="bi bi-house-door" style="position:fixed; top:5; left:90%; cursor:pointer;" onclick="closemyprofile()"></i>
+    <i class="bi bi-person-plus" style="position:fixed; top:5; left:70%; cursor:pointer;" onclick="displayblockornone(event);" data-block="addfollowings" data-none="MyProfile"></i>
+    </font>
+    </div>
+
+    
+  </div>
+        <div class="myprofileimagebox">
+  <img src="https://i.postimg.cc/JDQhHHXX/default-user-icon-5.png" class="myprofileimage" id="output" onclick="selectprofileicon();">
+        
+
+      </div>
+
+     <!-- <form style="width:100%; height:50px; border:1px solid silver; position:relative; top:125;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+          <b style="position:fixed; top:300; left:20%;">Followers<br>
+             100</b>
+             <b style="position:fixed; top:300; left:60%;">Following<br>
+             100</b>
+        </center>
+      </form>-->
+      <div class="followerslist">
+        <center>
+     <p id="Followingp" style="font-family:Sans-Serif; position:relative; left:-100%; top:28px;">Following<br>16</p>
+     <p id="Followersp"style="font-family:Sans-Serif; position:relative; left:100%; top:-25px;">Followers<br>19</p>
+
+
+        </center>
+
+      </div>
+      <p style="position:relative; top:150px;">
+        
+      </p>
+      
+      <input type="file" accept=".png, .jpg" style="display:none;" onchange="openFile(event)" id="fileselector">
+</div>
+<div id="Messages" class="Page">
+ <div class="messagestitle">
+     <font size="6">
+    <i class="bi bi-arrow-left" id="arrow" onclick="displayblockornone(event);" data-block="Un-Meet" data-none="Messages"></i>
+  </font>
+   <font style="font-family: 'Fredoka One', cursive; text-align:center;" size="5" color="#009bff">Messages</font>
+   <font size="6"><i onclick="openmenu();" id="menubutton"class="bi bi-three-dots-vertical"></i></font>
+   <div class="dropdown">
+  <div class="dropdown-content">
+    <p onclick="displayblockornone(event);" data-block="Newchat" data-none="Messages">New Chat<i style="float:right;" class="fas fa-user"></i></p>
+    <p onclick="displayblockornone(event);" data-block="Newgroup" data-none="Messages">New Group<i style="float:right;" class="fas fa-users"></i></p>
+  </div>
+</div>
+   
+   <div id="notificationcountformessages">0</div>
+   
+    </div>
+    <br>
+    <br>
+    <br>
+    <p id="messagecomingbox">
+<!--<div data-id="messagecomingbox">
+<img src="https://i.postimg.cc/y3CkWfz7/UNMEET-free-file.png" data-id="messagecomingimage">
+</div>
+<div data-id="messagecomingbox">
+<img src="My.jpg" data-id="messagecomingimage">
+</div><div data-id="messagecomingbox">
+<img src="My.jpg" data-id="messagecomingimage">
+</div><div data-id="messagecomingbox">
+<img src="My.jpg" data-id="messagecomingimage">
+</div><div data-id="messagecomingbox">
+<img src="My.jpg" data-id="messagecomingimage">
+</div><div data-id="messagecomingbox">
+<img src="My.jpg" data-id="messagecomingimage">
+</div>-->
+</p>
+</div>
+ <script src="https://kit.fontawesome.com/5023e0b475.js" crossorigin="anonymous"></script>
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<!--<div id="Chat">
+  <div id="namebox">
+    <font size="5">
+       <i class="bi bi-arrow-left"></i>
+      <img src="https://i.postimg.cc/y3CkWfz7/UNMEET-free-file.png">
+      <code id="friendsname" style="font-family:Sans-Serif;">Tarun</code>
+    </font>
+  <font size="6">
+    <i class="bi bi-card-image" style="position:fixed; top:8; left:90%;" onclick="sendfile();"></i>
+
+
+  </font>
+  
+  </div>
+</div>
+  <div id="messagebox">
+    
+  </div>
+  <div id="messagearea">
+<textarea class="area" id="input" oninput="changetomicortelegram(event);" placeholder="Messeges....."></textarea>
+<font size="6">
+<i class="bi bi-emoji-smile" id="emoji-smile" onclick="displayemojibox();"></i> 
+<i class="bi bi-mic" onclick="onmic(event);"id="mic"></i>
+<i class="bi bi-telegram" onclick="sendmessage();" id="telegram"></i>
+</font>
+</div>
+-->
+
+<!---->
+	<input id="time" style="display:none;">
+	
+	    <div id="drop-down-menu">
+	      <input type="file" id="selectimagetosendimage" accept="image/*" style="display:none;" onchange="sendimage(event);">
+	      <input type="file" id="selectimagetosendvideo" accept="video/*" style="display:none;" onchange="sendvideo(event);">
+      <div id="1st-option" style="border-bottom:1px solid white;" data-click="selectimagetosendimage" onclick="clickinputfile(event);">
+        Image
+      </div>
+      <div class="2nd-option" data-click="selectimagetosendvideo" onclick="clickinputfile(event);">
+        Video
+      </div>
+    </div>
+    
+    
+    <div id="uploadimagepage">
+      <font size="6">
+        <i class="bi bi-arrow-left" id="arrow" onclick="displaynone(event);" data-none="uploadimagepage"></i>
+      </font>
+      <img src="https://i.postimg.cc/y3CkWfz7/UNMEET-free-file.png" id="uploadimage">
+      <button id="uploadimagebutton" onclick="uploadimage(event);">
+        SEND
+      </button>
+    </div>
+    
+   <div id="uploadvideopage">
+     <font size="6">
+    <i class="bi bi-arrow-left" id="arrow" onclick="displaynone(event);" data-none="uploadvideopage"></i>
+     </font>
+      <video src="VID.mp4" oncanplay="seeduration(event)" controls id="uploadvideo"></video>
+      <button id="uploadvideobutton" onclick="uploadvideo(event);">
+        SEND
+      </button>
+    
+    </div>
+    
+    <div id="emoji-box">
+      
+    </div>
+    <div id="addfollowings" class="Page">
+    <div id="serachboxforaddfollowings"><font size="6">       <i class="bi bi-arrow-left" onclick="displayblockornone(event);" data-block="MyProfile" data-none="addfollowings"></i></font></div>
+    </div>
+    <div id="Newchat">
+<input data-id="newmessagesto" id="newmessagesto" placeholder="To:">
+<input data-id="newmessagesmessage" placeholder="Message:" id="newmessagesmessage">
+<br>
+<br>
+<br>
+
+
+<center>
+<button onclick="displayblockornone(event);" data-block="Messages" data-none="Newchat" data-id="newchatdonebutton">Back</button>
+<br>
+<br>
+<button onclick="createnewchat();" data-id="newchatdonebutton">Done</button></center>
+</div>
+<div id="Newgroup">
+  <font size="6">
+    <i data-for="checked-false" onclick="displayblockornone(event);" class="bi bi-arrow-left" id="arrow" data-block="Messages" data-none="Newgroup"></i>
+  </font>
+  <div data-id="headerforNewgroup">
+    Select People
+    
+    <center>
+      <button data-updatesnapkey="" class="createnewgroupbutton" onclick="createnewgroup(event);" data-id="newchatdonebutton" style="position:relative; left:75;">Next</button>
+    </center>
+  </div>
+  <hr color="silver">
+    <div style="width:345px; height:50px; border-bottom:1px solid silver; margin:auto; background:; display:flex; align-items:center; overflow:scroll;" id="newgroupmembersname"></div>
+    <p style="display:none;" id="newgroupmembersemail"></p>
+  <p id="selectpeoplefornewgroup">
+ <!-- <div style="width:345px; height:100px; border-bottom:1px solid silver; margin:auto;">
+    <div style="width:100; height:100; background:; display:flex; align-items:center; justify-content:center;"><img style="width:50px; clip-path:circle();" src="My.jpg"></div><p style="position:relative; top:-75; left:100;">js_237</p>
+    <input type="checkbox" style="float:right; position:relative; top:-110;">
+  </div>--></p>
+</div>
+<div id="notification">
+  <font size="6">
+  <i class="bi bi-arrow-left" id="arrow" onclick="displayblockornone(event);" data-none="notification" data-block="Un-Meet"></i>
+  </font>
+  <div data-id="notificationtitlebox">
+    <font style="font-family: 'Fredoka One', cursive; text-align:center;" size="5" color="#009bff">Notification</font>
+  </div>
+  <div data-id="notificationboxfronotifications" id="notificationboxfronotifications"></div>
+</div>
+
+    <p id="usersprofile">
+      
+    </p><p class="messagemebox">
+      
+    </p><p class="dropdownmenus"></p>
+    <p class="messagesoptionsmenu"><div data-id="options">
+  <div id="removeorkeepasadmindiv" data-id="dropdown-content">
+<p style="position:relative; left:60;"><i class="bi bi-x" onclick="displaynone(event);" data-none="removeorkeepasadmindiv"></i></p>
+<p id="removeorkeepasadmindiv1p" onclick="removemembers2(event);">Remove</p>
+<p id="removeorkeepasadmindiv2p">Make as admin</p>
+  </div>
+</div></p>
+    <p class="groupinfos"></p>
+</html>

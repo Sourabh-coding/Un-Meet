@@ -1,0 +1,942 @@
+ .singupheader{
+      width:100%;
+      height:50px;
+      border-bottom:1px solid silver;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:Comfortaa,cursive;
+      font-size:30;
+    }
+    .Name1, .Name2{
+      position:relative;
+      display:inline-block;
+      padding:10px;
+      outline:none;
+      border-radius:5px;
+      border:1px solid silver;
+      background:rgb(253,253,253);
+      display:block;
+       
+       
+    }
+    #newpassword{
+      position:relative;
+      display:inline-block;
+      padding:10px;
+      outline:none;
+      border-radius:5px;
+      border:1px solid silver;
+      background:rgb(253,253,253);
+      display:none;
+    }
+    #Singuppage{
+      display:none;
+    }
+    #Verify{
+    position:relative;
+      display:none;
+      padding:10px;
+      outline:none;
+      border-radius:5px;
+      border:1px solid silver;
+      background:rgb(253,253,253);
+      width:75px;
+      text-align:center;
+    }
+    .Name1:focus{
+      border-color:dodgerblue;
+      box-sizing:border-box;
+      box-shadow:0 0 3px 0 dodgerblue;
+    }
+    .Name2:focus{
+      border-color:dodgerblue;
+      box-sizing:border-box;
+      box-shadow:0 0 3px 0 dodgerblue;
+      
+      
+    }
+    #Verify:focus{
+      border-color:dodgerblue;
+      box-sizing:border-box;
+      box-shadow:0 0 3px 0 dodgerblue;
+      
+    }
+    .button{
+      background-color: rgb(76,103,175); /* Green */
+  width:50%;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  align-items:center;
+  justify-content:center;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+    }
+    .Page{
+      width:100%;
+      height:100%;
+      position:fixed;
+      top:0;
+      left:0;
+    }
+    #dateofbirth{
+      display:none;
+      font-family:Sans-Serif;
+    }
+    #Email{
+                padding:20px;
+      outline:none;
+      border:none;
+      border-bottom:1px solid black;
+      font-size:16px;
+      display:none;
+    }
+    .loginheader{
+      width:100%;
+      height:50px;
+      font-family:Comfortaa,cursive;
+      font-size:30;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      border-bottom:1px solid silver;
+    }
+    .loginbox{
+      width:300;
+      height:450;
+      border:1px solid black;
+    }
+    #Loginpage{
+      display:none;
+    }
+    .newacountbutton{
+      display:none;
+      background-color: rgb(76,175,77); /* Green */
+  width:200;
+  height:50;
+  border: none;
+  color: white;
+  
+  align-items:center;
+  justify-content:center;
+  
+  font-size: 16px;
+  cursor:pointer;
+  position:relative; top:550;
+    }
+
+
+#Un-Meet{
+  display:block;
+  overflow:scroll;
+}
+#header{
+  width:100%;
+  height:50px;
+  border-bottom:1px solid silver;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:fixed;
+  left:0;
+  z-index:1000;
+  background:white;
+}
+#posts{
+  width:100%;
+  height:85%;
+  
+  position:relative;
+  top:50px;
+}
+#footer{
+  width:100%;
+  height:45px;
+  border-top:1px solid silver;
+  position:fixed;
+  top:94%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:white;
+  z-index:10000;
+}
+.mynameheader{
+  width:100%;
+height:50px;
+border-bottom:1px solid silver;
+  display:flex;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  background:white;
+}
+.overflowbox{
+  width:50%;
+height:50px;
+  overflow:scroll;
+border-bottom:1px solid silver;
+  display:flex;
+  align-items:center;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1000;
+  background:white;
+}
+
+.myprofileimagebox{
+  width:100%;
+  height:165px;
+  
+  position:relative;
+  top:80px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.myprofileimage{
+  width:164px;
+  clip-path:circle();
+}
+.followerslist{
+  width:100%;
+  height:50px;
+  border:1px solid silver;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+  top:125px;
+}
+#MyProfile{
+  overflow:scroll;
+  display:none;
+}
+.messagestitle{
+  width:100%;
+  height:50px;
+  border-bottom:1px solid silver;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:fixed;
+  left:0;
+  z-index:1000;
+  background:white;
+  
+}
+.Messagecametoyoubox{
+  width:100%;
+  height:50px;
+  display:flex;
+  align-items:center;
+  border:1px solid silver;
+}
+#Messages{
+  display:none;
+  overflow:scroll;
+}
+.MessageRecieverBox{
+  width:100%;
+  height:50px;
+  position:fixed;
+  top:0;
+  left:0;
+  border-bottom:1px solid silver;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:Sans-Serif; 
+}
+.MessageDisplayer{
+  width:100%;
+  height:50%;
+  border:1px solid black;
+  position:fixed;
+  top:50px;
+  left:0;
+  overflow:scroll;
+}
+.messageinput{
+  width:80%;
+  height:50px;
+  position:fixed;
+  top:60%;
+  outline:none;
+  border:1px solid silver;
+  border-radius:10px;
+}
+.messagesenderbutton{
+  width:50px;
+  height:30px;
+  background:rgb(30,148,230);
+  color:white;
+  border:none;
+  border-radius:10;
+  position:fixed;
+  top:62%;
+  left:82%;
+}
+  #Chat{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+  }
+  #namebox{
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid gray;
+    font-family:Sans-Serif;
+
+  }
+  #namebox img{
+    width:25;
+    height:25;
+    border-radius:50%;
+    position:relative;
+    top:3;
+    object-fit:cover;
+  }
+  #namebox font{
+    position:relative;
+    left:10px;
+  }
+  .textarea{
+    width:100%;
+    border:1px solid black;
+    position:fixed;
+	top:90%;
+  }
+  .area{
+    display: block;
+	flex: 1;
+	width: 75%;
+	height: 40px;
+	border-radius: 60px;
+	margin: 5px;
+	padding: 10px;
+	font-family:Sans-Serif;
+	outline: none;
+	padding-left: 40px;
+	padding-right: 90px;
+	border: 2px solid #ccc;
+	color: /*#555*/black;
+	resize: none;
+	position:fixed;
+	top:90%;
+	left:10%;
+  }
+  #emoji-smile{
+    position:fixed;
+	top:91%;
+	left:0;
+	
+  }
+  [data-id="mic"]{
+    position:fixed;
+	top:91%;
+	left:90%;
+  }
+  [data-id="telegram"]{
+  position:fixed;
+	top:91%;
+	left:90%;
+	display:none;
+  }
+   [data-id="messagebox"]{
+    width:100%;
+    height:80%;
+    border-bottom:1px solid silver;
+    position:fixed;
+    background:#F0FFF0;
+    top:50px;
+    left:0;
+    overflow-y:scroll;
+  }
+  #start-camera{
+    display:none;
+  }
+  #start-record{
+    display:none;
+  }
+  #stop-record{
+    display:none;
+  }
+  #drop-down-menu{
+    width:100;
+    height:100;
+    border-radius:10px;
+    background:rgb(79,129,221);
+    position:fixed;
+    color:white;
+    top:50;
+    left:71%;
+    font-family:Sans-Serif;
+    display:none;
+    z-index:10;
+  }
+  #drop-down-menu div{
+    width:100;
+    height:50;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -o-user-select:none;
+    -user-select:none;
+  }
+  #drop-down-menu div:active{
+    background:white;
+    color:black;
+    
+  }
+  #uploadimagepage{
+    width:400;
+    display:none;
+    height:100%;
+    margin:auto;
+    background:white;
+    position:relative;
+    z-index:100;
+  }
+  #uploadimage{
+    width:345;
+    
+    position:relative;
+    top:25%;
+   clip-path:inset();
+  }
+  #uploadimagepage button{
+    background-color:rgb(49,121,255) ; /* Green */
+    width:345px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  align-items:center;
+  justify-content:center;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  position:relative;
+  top:35%;
+  
+  }
+
+  #emoji-box{
+  width:345px;
+    height:325px;
+    margin:auto;
+    border:1px solid black;
+    background:white;
+    position:relative;
+    z-index:10000;
+    display:none;
+      grid-template-rows:repeat(10, 10fr);
+      grid-template-columns:repeat(8, 1fr);
+  }
+  #emoji{
+    border:1px solid black;
+  position:relative;
+  z-index:1000000;
+  }
+  #indicator{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    background:red;
+    color:white;
+    position:fixed;
+    left:15;
+    z-index:100;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:10;
+    overflow:scroll;
+    font-family:Sans-Serif;
+  }
+  #uploadvideopage{
+      width:345;
+    display:none;
+    height:100%;
+    margin:auto;
+    background:white;
+    position:relative;
+    z-index:100;
+    overflow:scroll;
+  }
+  #uploadvideo{
+    width:345;
+    height:345;
+    position:relative;
+    top:25%;
+  }
+  #uploadvideobutton {
+    background-color:rgb(49,121,255) ; /* Green */
+    width:345px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  align-items:center;
+  justify-content:center;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  position:relative;
+  top:35%;
+  }
+  [data-id="messagecomingbox"]{
+    width:100%;
+    height:100px;
+  
+    
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+  }
+  [data-id="messagecomingimage"]{
+    width:50px;
+    clip-path:circle();
+  }
+  #notificationcountformessages{
+    width:25px;
+    height:25px;
+    background:red;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    border-radius:50%;
+    overflow:scroll;
+    font-family:Sans-Serif;
+  }
+  [data-id="namebox"]{
+    width:100%;
+    height:100px;
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid gray;
+    font-family:Sans-Serif;
+  }
+  [data-id="nameboximg"]{
+    width:50;
+    clip-path:circle();
+    position:relative;
+    top:3;
+  }
+    [data-id="followmebox"]{
+    width:345px;
+    margin:auto;
+    height:100px;
+    
+    display:flex;
+    align-items:center;
+    font-family:Sans-Serif;
+  }
+  
+   [data-id="followimgbox"]{
+    width:70px;
+    height:100px;
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+  [data-id="followmebutton"]{
+    background-color: #077bff; /* Green */
+  border: none;
+  color: white;
+  border-radius:5px;
+  padding: 15px 30px;
+  align-items:center;
+  justify-content:center;
+  display: inline-block;
+  font-size: 13px;
+  cursor:pointer;
+  position:relative;
+  left:50;  
+  } 
+  /* data-attributes */
+   [data-id="profilebox"]{
+    display:none;
+    overflow:scroll;
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    border:1px solid black;
+  }
+  [data-id="usernamebox"]{
+    width:100%;
+    height:50px;
+    display:flex;
+    align-self:center;
+    justify-content:center;
+    border-bottom:1px solid silver;
+    overflow:scroll;
+    position:fixed;
+    top:0;
+    left:0;
+    background:white;
+    z-index:1000;
+  }
+  [data-id="userprofileiconbox"]{
+    width:100%;
+    height:200px;
+    border-bottom:1px solid silver;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    top:50px;
+  }
+  [data-id="userprofileicon"]{
+    width:150px;
+    clip-path:circle();
+  }
+  [data-id="userfollowbutton"]{
+    width:90%;
+    background-color: #077bff; /* Green */
+  border: none;
+  color: white;
+  border-radius:5px;
+  padding: 15px 32px;
+  align-items:center;
+  justify-content:center;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  position:relative;
+  top:20px;
+  }
+  [data-id="usermessagebutton"]{
+    width:90%;
+    background-color: #077bff; /* Green */
+  border: none;
+  color: white;
+  border-radius:5px;
+  padding: 15px 32px;
+  align-items:center;
+  justify-content:center;
+  display: inline-block;
+  font-size: 16px;
+  cursor:pointer;
+  position:relative;
+  top:20px;
+  display:none;
+  }
+  [data-id="followersandfollowinglist"]{
+    width:100%;
+    height:50px;
+    border:none;
+    border-top:1px solid silver;
+    border-bottom:1px solid silver;
+    position:relative;
+    top:40px;
+  }
+  [data-id="followersandfollowinglistdiv1"]{
+    width:50%;
+    height:50px;
+    font-family:Sans-Serif;
+     display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  [data-id="followersandfollowinglistdiv2"]{
+    width:50%;
+    height:50px;
+    font-family:Sans-Serif;
+    position:relative;
+    top:-50px;
+    left:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  [data-id="userimageposts"]{
+    width:345px;
+    clip-path:inset();
+    position:relative;
+    margin:auto;
+    top:50px;
+  }
+  /* data-attributes finish */
+  #addfollowings{
+    display:none;
+    overflow:scroll;
+  }
+  .messagefull{
+    display:none;
+  }
+    [data-id="messagecomingimagebox"]{
+    width:100px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:;
+  }
+  #serachboxforaddfollowings{
+    width:400px;
+    height:60px;
+    background:/*#d0d0d0*/;
+    position:relative;
+    margin:auto;
+    display:flex;
+    align-items:center;
+  }
+  .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 8px 12px/*12px 16px*/;
+  z-index: 1;
+  text-align:center;
+  position:fixed;
+  top:60pxpx;
+  left:45%;
+  font-family:Sans-Serif;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  -user-select:none;
+}
+  #menubutton{
+    position:fixed; left:90%; top:6;
+  }
+  #menubutton:hover .dropdown-content{
+    display: block;
+  }
+#Newchat{
+  width:345px;
+  height:100%;
+  background:;
+  position:relative;
+  margin:auto;
+  display:none;
+}
+  [data-id="newmessagesto"]{
+    width:345px;
+    padding:10px;
+    outline:none;
+    margin:auto;
+    border:1px solid silver;
+  }
+  [data-id="newmessagesmessage"]{
+width:345px;
+height:200px;
+    padding:10px;
+    outline:none;
+    margin:auto;
+    border:none;
+    border-bottom:1px solid silver;
+    border-right:1px solid silver;
+    border-left:1px solid silver;
+  }
+  [data-id="newchatdonebutton"]{
+    background-color: #077bff; /* Green */
+  border: none;
+  color: white;
+  border-radius:5px;
+  padding: 15px 30px;
+  align-items:center;
+  justify-content:center;
+  display: inline-block;
+  font-size: 13px;
+  cursor:pointer;
+  position:relative;
+  }  
+  #arrow{
+    position:fixed;
+    top:10;
+    left:10;
+  }
+   #Newgroup{
+    width:345px;
+    height:100%;
+    margin:auto;
+    font-family:Sans-Serif;
+    display:none;
+  }
+  [data-id="headerforNewgroup"]{
+    width:345px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+     [data-id="options"] {
+  position: relative;
+  display: inline-block;
+}
+
+[data-id="dropdown-content"] {
+  
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding:  ;
+  z-index: 1;
+  text-align:center;
+  position:fixed;
+  top:50%;
+  left:50%;
+  font-family:Sans-Serif;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  -user-select:none;
+  transform:translate(-50%,-50%);
+  display:none;
+}
+[data-class="groupinfobox"]{
+  width:345;
+  height:100%;
+  margin:auto;
+  overflow:scroll;
+  display:none;
+  font-family:Sans-Serif;
+}
+  [data-class="groupiconboxofgroupinfo"]{
+    width:345;
+    height:200;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom:1px solid silver;
+  }
+  [data-class="arrowofgroupinfo"]{
+    position:fixed;
+    top:10;
+    left:10;
+    cursor:pointer;
+  }
+  [data-class="groupiconimageofgroupinfo"]{
+    width:190px;
+    clip-path:circle();
+  }
+  [data-class="addparticpentsofgroupinfo"]{
+    position:fixed;
+    top:10;
+    left:320;
+    transform:rotateY(180deg);
+    cursor:pointer;
+  }
+  [data-class="groupnamebox"]{
+    min-width:345;
+    height:200;
+    padding:10px;
+    background:#f9f9f9;
+    border-bottom:1px solid silver;
+    display:flex;
+    align-items:center;
+    overflow-x:scroll;
+  }
+  [data-class="groupmemberstitle"]{
+    width:345;
+    height:50;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom:1px solid silver;
+  }
+  [data-class="groupmembersforgroupinfo"]{
+    width:345;
+    height:200;
+    padding:10px;
+    background:;
+    border-bottom:1px solid silver;
+    display:flex;
+    overflow-x:scroll;
+    word-break:break-all;
+  }
+  [data-class="exitgroupbutton"], [data-class="deletegroupbutton"]{
+    width:345;
+    height:50;
+    border-top:1px solid silver;
+    border-bottom:1px solid silver;
+    color:red;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  } 
+   #notification{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    overflow:scroll;
+    display:none;
+  }
+  [data-id="notificationtitlebox"]{
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-bottom:1px solid silver;
+  }
+  [data-id="notificationboxfronotifications"]{
+    width:100%;
+    height:90%;
+    border-bottom:1px solid silver;
+    margin:auto;
+    overflow:scroll;
+  }
+  [data-id="notificationbox"]{
+    width:100%;
+    height:100;
+    border-bottom:1px solid silver;
+    display:flex;
+    align-items:center;
+    word-break:break-all;
+    font-family:Sans-Serif;
+    overflow:scroll;
+  }
+  [data-id="imageboxofnotificationbox"]{
+    width:60;
+    height:100;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  [data-id="imageboxofnotificationbox"] img{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    border-radius:50%;
+  }
+  [data-id="timefornotification"]{
+    position:fixed;
+    right:0;
+    font-family:Sans-Serif;
+    font-size:12px;
+    margin-top:80;
+  }
+  [data-id="wrongmarkfornotification"]{
+    position:fixed;
+    right:0;
+    font-family:Sans-Serif;
+    font-size:12px;
+    margin-top:-80;
+  }
