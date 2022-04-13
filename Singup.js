@@ -15,8 +15,8 @@ var micid;
 window.addEventListener("load",function(){
   left = window.innerWidth - 220;
   if(c.s_k == undefined || c.s_k == ""){
-  /*  document.getElementById("Loginpage").style.display = "block";
-    document.getElementById("Un-Meet").style.display = "none";*/
+    document.getElementById("Loginpage").style.display = "block";
+    document.getElementById("Un-Meet").style.display = "none";
   }
  // alert(left)
 })
